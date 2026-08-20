@@ -1,0 +1,36 @@
+INSTRUÇÕES PARA APLICAR A CORREÇÃO DE BOUQUETS EM OUTRO SERVIDOR
+====================================================================
+
+ARQUIVOS CORRIGIDOS (2 arquivos):
+----------------------------------
+1. /api/player_api.php
+2. /player_api.php
+
+PASSO A PASSO:
+--------------
+
+1. ACESSE O SERVIDOR ORIGEM (onde a correção já foi aplicada):
+   - Conecte-se via FTP, SFTP ou acesso ao painel do servidor atual
+   - Navegue até a pasta raiz do site (ex: /var/www/html, /home/site/public_html, etc.)
+
+2. BAIXE OS 2 ARQUIVOS:
+   - Baixe o arquivo: api/player_api.php
+     (caminho completo: /api/player_api.php)
+   - Baixe o arquivo: player_api.php
+     (caminho completo: /player_api.php)
+
+3. ACESSE O SERVIDOR DESTINO (outra hospedagem):
+   - Conecte-se via FTP, SFTP ou acesso ao painel da outra hospedagem
+   - Navegue até a pasta raiz do site
+
+4. ENVIE OS 2 ARQUIVOS para os MESMOS CAMINHOS:
+   - Envie api/player_api.php para /api/player_api.php
+   - Envie player_api.php para /player_api.php
+
+5. PRONTO! A correção está aplicada no outro servidor.
+
+OBSERVAÇÕES:
+------------
+- Apenas esses 2 arquivos foram alterados, nada mais precisa ser copiado
+- As permissões dos arquivos devem ser as mesmas dos originais (geralmente 644)
+- Não é necessário reiniciar servidor web, a alteração é imediata
